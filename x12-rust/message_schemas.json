@@ -1,0 +1,4792 @@
+{
+  "271": {
+    "L2100A": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "REF",
+          "max": 9,
+          "required": false,
+          "description": "Information Source Additional Identification"
+        },
+        {
+          "segment": "PER",
+          "max": 3,
+          "required": false,
+          "description": "Information Source Contact Information"
+        },
+        {
+          "segment": "AAA",
+          "max": 9,
+          "required": false,
+          "description": "Request Validation"
+        }
+      ]
+    },
+    "L2000A": {
+      "elements": [
+        {
+          "segment": "HL",
+          "max": 1,
+          "required": true,
+          "description": "Information Source Level"
+        },
+        {
+          "segment": "AAA",
+          "max": 9,
+          "required": false,
+          "description": "Request Validation"
+        },
+        {
+          "loop": "L2100A",
+          "max": 1,
+          "required": false,
+          "description": "Information Source Name"
+        }
+      ]
+    },
+    "L2100B": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Information Receiver Name"
+        },
+        {
+          "segment": "REF",
+          "max": 9,
+          "required": false,
+          "description": "Information Receiver Additional Identification"
+        },
+        {
+          "segment": "AAA",
+          "max": 9,
+          "required": false,
+          "description": "Information Receiver Request Validation"
+        }
+      ]
+    },
+    "L2000B": {
+      "elements": [
+        {
+          "segment": "HL",
+          "max": 1,
+          "required": false,
+          "description": "Information Receiver Level"
+        },
+        {
+          "loop": "L2100B",
+          "max": 1,
+          "required": false,
+          "description": "Information Receiver Name"
+        }
+      ]
+    },
+    "L2115C": {
+      "elements": [
+        {
+          "segment": "III",
+          "max": 1,
+          "required": false,
+          "description": "Subscriber Eligibility or Benefit Additional Information"
+        }
+      ]
+    },
+    "L2120C": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Subscriber Benefit Related Entity Name"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": false,
+          "description": "Subscriber Benefit Related Entity Address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": false,
+          "description": "Subscriber Benefit Related City/State/ZIP Code"
+        },
+        {
+          "segment": "PER",
+          "max": 3,
+          "required": false,
+          "description": "Subscriber Benefit Related Entity Contact Information"
+        },
+        {
+          "segment": "PRV",
+          "max": 1,
+          "required": false,
+          "description": "Subscriber Benefit Related Provider Information"
+        }
+      ]
+    },
+    "L2110C": {
+      "elements": [
+        {
+          "segment": "EB",
+          "max": 1,
+          "required": false,
+          "description": "Subscriber Eligibility or Benefit Information"
+        },
+        {
+          "segment": "HSD",
+          "max": 9,
+          "required": false,
+          "description": "Health Care Services Delivery"
+        },
+        {
+          "segment": "REF",
+          "max": 9,
+          "required": false,
+          "description": "Subscriber Additional Identification"
+        },
+        {
+          "segment": "DTP",
+          "max": 20,
+          "required": false,
+          "description": "Subscriber Eligibility/Benefit Date"
+        },
+        {
+          "segment": "AAA",
+          "max": 9,
+          "required": false,
+          "description": "Subscriber Request Validation"
+        },
+        {
+          "segment": "MSG",
+          "max": 10,
+          "required": false,
+          "description": "Message Text"
+        },
+        {
+          "segment": "LS",
+          "max": 1,
+          "required": false,
+          "description": "Loop Header"
+        },
+        {
+          "segment": "LE",
+          "max": 1,
+          "required": false,
+          "description": "Loop Trailer"
+        },
+        {
+          "loop": "L2115C",
+          "max": 10,
+          "required": false,
+          "description": "Subscriber Eligibility or Benefit Additional Information"
+        },
+        {
+          "loop": "L2120C",
+          "max": 1,
+          "required": false,
+          "description": "Subscriber Benefit Related Entity Name"
+        }
+      ]
+    },
+    "L2100C": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Subscriber Name"
+        },
+        {
+          "segment": "REF",
+          "max": 9,
+          "required": false,
+          "description": "Subscriber Additional Identification"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": false,
+          "description": "Subscriber Address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": false,
+          "description": "Subscriber City/State/ZIP Code"
+        },
+        {
+          "segment": "PER",
+          "max": 3,
+          "required": false,
+          "description": "Subscriber Contact Information"
+        },
+        {
+          "segment": "AAA",
+          "max": 9,
+          "required": false,
+          "description": "Subscriber Request Validation"
+        },
+        {
+          "segment": "DMG",
+          "max": 1,
+          "required": false,
+          "description": "Subscriber Demographic Information"
+        },
+        {
+          "segment": "INS",
+          "max": 1,
+          "required": false,
+          "description": "Subscriber Relationship"
+        },
+        {
+          "segment": "DTP",
+          "max": 9,
+          "required": false,
+          "description": "Subscriber Date"
+        },
+        {
+          "loop": "L2110C",
+          "max": -1,
+          "required": false,
+          "description": "Subscriber Eligibility or Benefit Information"
+        }
+      ]
+    },
+    "L2000C": {
+      "elements": [
+        {
+          "segment": "HL",
+          "max": 1,
+          "required": false,
+          "description": "Subscriber Level"
+        },
+        {
+          "segment": "TRN",
+          "max": 3,
+          "required": false,
+          "description": "Subscriber Trace Number"
+        },
+        {
+          "loop": "L2100C",
+          "max": 1,
+          "required": false,
+          "description": "Subscriber Name"
+        }
+      ]
+    },
+    "L2115D": {
+      "elements": [
+        {
+          "segment": "III",
+          "max": 1,
+          "required": false,
+          "description": "Dependent Eligibility or Benefit Additional Information"
+        }
+      ]
+    },
+    "L2120D": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Dependent Benefit Related Entity Name"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": false,
+          "description": "Dependent Benefit Related Entity Address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": false,
+          "description": "Dependent Benefit Related Entity City/State/ZIP Code"
+        },
+        {
+          "segment": "PER",
+          "max": 3,
+          "required": false,
+          "description": "Dependent Benefit Related Entity Contact Information"
+        },
+        {
+          "segment": "PRV",
+          "max": 1,
+          "required": false,
+          "description": "Dependent Benefit Related Provider Information"
+        }
+      ]
+    },
+    "L2110D": {
+      "elements": [
+        {
+          "segment": "EB",
+          "max": 1,
+          "required": false,
+          "description": "Dependent Eligibility or Benefit Information"
+        },
+        {
+          "segment": "HSD",
+          "max": 9,
+          "required": false,
+          "description": "Health Care Services Delivery"
+        },
+        {
+          "segment": "REF",
+          "max": 9,
+          "required": false,
+          "description": "Dependent Additional Identification"
+        },
+        {
+          "segment": "DTP",
+          "max": 20,
+          "required": false,
+          "description": "Dependent Eligibility/Benefit Date"
+        },
+        {
+          "segment": "AAA",
+          "max": 9,
+          "required": false,
+          "description": "Dependent Request Validation"
+        },
+        {
+          "segment": "MSG",
+          "max": 10,
+          "required": false,
+          "description": "Message Text"
+        },
+        {
+          "segment": "LS",
+          "max": 1,
+          "required": false,
+          "description": "Dependent Eligibility or Benefit Information"
+        },
+        {
+          "segment": "LE",
+          "max": 1,
+          "required": false,
+          "description": "Loop Trailer"
+        },
+        {
+          "loop": "L2115D",
+          "max": 10,
+          "required": false,
+          "description": "Dependent Eligibility or Benefit Additional Information"
+        },
+        {
+          "loop": "L2120D",
+          "max": 1,
+          "required": false,
+          "description": "Dependent Benefit Related Entity Name"
+        }
+      ]
+    },
+    "L2100D": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Dependent Name"
+        },
+        {
+          "segment": "REF",
+          "max": 9,
+          "required": false,
+          "description": "Dependent Additional Identification"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": false,
+          "description": "Dependent Address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": false,
+          "description": "Dependent City/State/ZIP Code"
+        },
+        {
+          "segment": "PER",
+          "max": 3,
+          "required": false,
+          "description": "Dependent Contact Information"
+        },
+        {
+          "segment": "AAA",
+          "max": 9,
+          "required": false,
+          "description": "Dependent Request Validation"
+        },
+        {
+          "segment": "DMG",
+          "max": 1,
+          "required": false,
+          "description": "Dependent Demographic Information"
+        },
+        {
+          "segment": "INS",
+          "max": 1,
+          "required": false,
+          "description": "Dependent Relationship"
+        },
+        {
+          "segment": "DTP",
+          "max": 9,
+          "required": false,
+          "description": "Dependent Date"
+        },
+        {
+          "loop": "L2110D",
+          "max": -1,
+          "required": false,
+          "description": "Depenent Eligibility or Benefit Information"
+        }
+      ]
+    },
+    "L2000D": {
+      "elements": [
+        {
+          "segment": "HL",
+          "max": 1,
+          "required": false,
+          "description": "Dependent Level"
+        },
+        {
+          "segment": "TRN",
+          "max": 3,
+          "required": false,
+          "description": "Dependent Trace Number"
+        },
+        {
+          "loop": "L2100D",
+          "max": 1,
+          "required": false,
+          "description": "Dependent Name"
+        }
+      ]
+    },
+    "L271": {
+      "elements": [
+        {
+          "segment": "ST",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "BHT",
+          "max": 1,
+          "required": true,
+          "description": ""
+        },
+        {
+          "segment": "SE",
+          "required": true
+        },
+        {
+          "loop": "L2000A",
+          "max": -1,
+          "required": false,
+          "description": "Information Source Level"
+        },
+        {
+          "loop": "L2000B",
+          "max": -1,
+          "required": false,
+          "description": "Information Receiver Level"
+        },
+        {
+          "loop": "L2000C",
+          "max": -1,
+          "required": false,
+          "description": "Subscriber Level"
+        },
+        {
+          "loop": "L2000D",
+          "max": -1,
+          "required": false,
+          "description": "Dependent Level"
+        }
+      ]
+    },
+    "root": {
+      "elements": [
+        {
+          "segment": "ISA",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "GS",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "GE",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "IEA",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "L271",
+          "max": 1,
+          "required": false,
+          "description": "This X12 Transaction Set contains the format and establishes the data contents of the Professional Healthcare Claim Transaction Set (271) for use within the context of an Electronic Data Interchange (EDI) environment."
+        }
+      ]
+    }
+  },
+  "276": {
+    "L2100A": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Payer Name"
+        },
+        {
+          "segment": "PER",
+          "max": 1,
+          "required": false,
+          "description": "Payer Contact information"
+        }
+      ]
+    },
+    "L2000A": {
+      "elements": [
+        {
+          "segment": "HL",
+          "max": 1,
+          "required": true,
+          "description": "Information Source Level"
+        },
+        {
+          "loop": "L2100A",
+          "max": -1,
+          "required": true,
+          "description": "Payer Name"
+        }
+      ]
+    },
+    "L2100B": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Information Receiver Name"
+        }
+      ]
+    },
+    "L2000B": {
+      "elements": [
+        {
+          "segment": "HL",
+          "max": 1,
+          "required": true,
+          "description": "Information Receiver Level"
+        },
+        {
+          "loop": "L2100B",
+          "max": -1,
+          "required": false,
+          "description": "Information Receiver Name"
+        }
+      ]
+    },
+    "L2100C": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Provider Name"
+        }
+      ]
+    },
+    "L2000C": {
+      "elements": [
+        {
+          "segment": "HL",
+          "max": 1,
+          "required": true,
+          "description": "Service Provider Level"
+        },
+        {
+          "loop": "L2100C",
+          "max": -1,
+          "required": false,
+          "description": "Provider Name"
+        }
+      ]
+    },
+    "L2100D": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Subscriber Name"
+        }
+      ]
+    },
+    "L2210D": {
+      "elements": [
+        {
+          "segment": "SVC",
+          "max": 1,
+          "required": false,
+          "description": "Service Line Information"
+        },
+        {
+          "segment": "REF",
+          "max": 1,
+          "required": false,
+          "description": "Service Line Item Identifiaction"
+        },
+        {
+          "segment": "DTP",
+          "max": 1,
+          "required": false,
+          "description": "Service Line Date"
+        }
+      ]
+    },
+    "L2200D": {
+      "elements": [
+        {
+          "segment": "TRN",
+          "max": 1,
+          "required": true,
+          "description": "Claim Submitter Trace Number"
+        },
+        {
+          "segment": "REF",
+          "max": 3,
+          "required": false
+        },
+        {
+          "segment": "AMT",
+          "max": 1,
+          "required": false,
+          "description": "Claim Submitted Charges"
+        },
+        {
+          "segment": "DTP",
+          "max": 1,
+          "required": false,
+          "description": "Claim Service Date"
+        },
+        {
+          "loop": "L2210D",
+          "max": -1,
+          "required": false,
+          "description": "Service Line Information"
+        }
+      ]
+    },
+    "L2000D": {
+      "elements": [
+        {
+          "segment": "HL",
+          "max": 1,
+          "required": true,
+          "description": "Subscriber Level"
+        },
+        {
+          "segment": "DMG",
+          "max": 1,
+          "required": false,
+          "description": "Subscriber Demographic Information"
+        },
+        {
+          "loop": "L2100D",
+          "max": -1,
+          "required": false,
+          "description": "Subscriber Name"
+        },
+        {
+          "loop": "L2200D",
+          "max": -1,
+          "required": false,
+          "description": "Claim Submitter Trace"
+        }
+      ]
+    },
+    "L2100E": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Dependent Name"
+        }
+      ]
+    },
+    "L2210E": {
+      "elements": [
+        {
+          "segment": "SVC",
+          "max": 1,
+          "required": false,
+          "description": "Service Line Information"
+        },
+        {
+          "segment": "REF",
+          "max": 1,
+          "required": false,
+          "description": "Service Line Item Identification"
+        },
+        {
+          "segment": "DTP",
+          "max": 1,
+          "required": true,
+          "description": "Service Line Date"
+        }
+      ]
+    },
+    "L2200E": {
+      "elements": [
+        {
+          "segment": "TRN",
+          "max": 1,
+          "required": true,
+          "description": "Claim Subimtter Trace Number"
+        },
+        {
+          "segment": "REF",
+          "max": 3,
+          "required": false
+        },
+        {
+          "segment": "AMT",
+          "max": 1,
+          "required": false,
+          "description": "Claim Submitted Charges"
+        },
+        {
+          "segment": "DTP",
+          "max": 1,
+          "required": false,
+          "description": "CLaim Service Date"
+        },
+        {
+          "loop": "L2210E",
+          "max": -1,
+          "required": false,
+          "description": "Service Line Information"
+        }
+      ]
+    },
+    "L2000E": {
+      "elements": [
+        {
+          "segment": "HL",
+          "max": 1,
+          "required": true,
+          "description": "Dependent Level"
+        },
+        {
+          "segment": "DMG",
+          "max": 1,
+          "required": false,
+          "description": "Dependent Demographic Information"
+        },
+        {
+          "loop": "L2100E",
+          "max": -1,
+          "required": false,
+          "description": "Dependent Name"
+        },
+        {
+          "loop": "L2200E",
+          "max": -1,
+          "required": false,
+          "description": "Claim Submitter Trace Number"
+        }
+      ]
+    },
+    "L276": {
+      "elements": [
+        {
+          "segment": "ST",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "BHT",
+          "max": 1,
+          "required": true,
+          "description": "Beginning Hierarchical Transaction"
+        },
+        {
+          "segment": "SE",
+          "required": true
+        },
+        {
+          "loop": "L2000A",
+          "max": -1,
+          "required": true,
+          "description": "Information Source Level"
+        },
+        {
+          "loop": "L2000B",
+          "max": -1,
+          "required": false,
+          "description": "Information Receiver Level"
+        },
+        {
+          "loop": "L2000C",
+          "max": -1,
+          "required": false,
+          "description": "Service Provider Level"
+        },
+        {
+          "loop": "L2000D",
+          "max": -1,
+          "required": false,
+          "description": "Subscriber Level"
+        },
+        {
+          "loop": "L2000E",
+          "max": -1,
+          "required": false,
+          "description": "Dependent Level"
+        }
+      ]
+    },
+    "root": {
+      "elements": [
+        {
+          "segment": "ISA",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "GS",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "GE",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "IEA",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "L276",
+          "max": -1,
+          "required": false,
+          "description": "This X12 Transaction Set contains the format and establishes the data contents of the Professional Healthcare Status Request and Response (276) for use within the context of an Electronic Data Interchange (EDI) environment."
+        }
+      ]
+    }
+  },
+  "277": {
+    "L2100A": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Payer Name"
+        },
+        {
+          "segment": "PER",
+          "max": 1,
+          "required": false,
+          "description": "Payer Contact information"
+        }
+      ]
+    },
+    "L2000A": {
+      "elements": [
+        {
+          "segment": "HL",
+          "max": 1,
+          "required": true,
+          "description": "Information Source Level"
+        },
+        {
+          "loop": "L2100A",
+          "max": 1,
+          "required": true,
+          "description": "Payer Name"
+        }
+      ]
+    },
+    "L2100B": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Information Receiver Name"
+        }
+      ]
+    },
+    "L2000B": {
+      "elements": [
+        {
+          "segment": "HL",
+          "max": 1,
+          "required": true,
+          "description": "Information Receiver Level"
+        },
+        {
+          "loop": "L2100B",
+          "max": -1,
+          "required": false,
+          "description": "Information Receiver Name"
+        }
+      ]
+    },
+    "L2100C": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Provider Name"
+        }
+      ]
+    },
+    "L2000C": {
+      "elements": [
+        {
+          "segment": "HL",
+          "max": 1,
+          "required": true,
+          "description": "Service Provider Level"
+        },
+        {
+          "loop": "L2100C",
+          "max": -1,
+          "required": false,
+          "description": "Provider Name"
+        }
+      ]
+    },
+    "L2100D": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Subscriber Name"
+        }
+      ]
+    },
+    "L2220D": {
+      "elements": [
+        {
+          "segment": "SVC",
+          "max": 1,
+          "required": false,
+          "description": "Service Line Information"
+        },
+        {
+          "segment": "STC",
+          "max": 1,
+          "required": false,
+          "description": "Service Line Status Information"
+        },
+        {
+          "segment": "REF",
+          "max": 1,
+          "required": false,
+          "description": "Service Line Item Identifiaction"
+        },
+        {
+          "segment": "DTP",
+          "max": 1,
+          "required": false,
+          "description": "Service Line Date"
+        }
+      ]
+    },
+    "L2200D": {
+      "elements": [
+        {
+          "segment": "TRN",
+          "max": 1,
+          "required": true,
+          "description": "Claim Submitter Trace Number"
+        },
+        {
+          "segment": "STC",
+          "max": 1,
+          "required": true,
+          "description": "Claim Level Status Information"
+        },
+        {
+          "segment": "REF",
+          "max": 3,
+          "required": false
+        },
+        {
+          "segment": "DTP",
+          "max": 1,
+          "required": false,
+          "description": "Claim Service Date"
+        },
+        {
+          "loop": "L2220D",
+          "max": -1,
+          "required": false,
+          "description": "Service Line Information"
+        }
+      ]
+    },
+    "L2000D": {
+      "elements": [
+        {
+          "segment": "HL",
+          "max": 1,
+          "required": true,
+          "description": "Subscriber Level"
+        },
+        {
+          "segment": "DMG",
+          "max": 1,
+          "required": true,
+          "description": "Subscriber Demographic Information"
+        },
+        {
+          "loop": "L2100D",
+          "max": -1,
+          "required": false,
+          "description": "Subscriber Name"
+        },
+        {
+          "loop": "L2200D",
+          "max": -1,
+          "required": false,
+          "description": "Claim Submitter Trace"
+        }
+      ]
+    },
+    "L2100E": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Dependent Name"
+        }
+      ]
+    },
+    "L2220E": {
+      "elements": [
+        {
+          "segment": "SVC",
+          "max": 1,
+          "required": false,
+          "description": "Service Line Information"
+        },
+        {
+          "segment": "STC",
+          "max": 1,
+          "required": false,
+          "description": "Service Line Status Information"
+        },
+        {
+          "segment": "REF",
+          "max": 1,
+          "required": false,
+          "description": "Service Line Item Identification"
+        },
+        {
+          "segment": "DTP",
+          "max": 1,
+          "required": false,
+          "description": "Service Line Date"
+        }
+      ]
+    },
+    "L2200E": {
+      "elements": [
+        {
+          "segment": "TRN",
+          "max": 1,
+          "required": true,
+          "description": "Claim Subimtter Trace Number"
+        },
+        {
+          "segment": "STC",
+          "max": 1,
+          "required": true,
+          "description": "Claim Level Status Information"
+        },
+        {
+          "segment": "REF",
+          "max": 3,
+          "required": true
+        },
+        {
+          "segment": "DTP",
+          "max": 1,
+          "required": false,
+          "description": "CLaim Service Date"
+        },
+        {
+          "loop": "L2220E",
+          "max": -1,
+          "required": false,
+          "description": "Service Line Information"
+        }
+      ]
+    },
+    "L2000E": {
+      "elements": [
+        {
+          "segment": "HL",
+          "max": 1,
+          "required": false,
+          "description": "Dependent Level"
+        },
+        {
+          "segment": "DMG",
+          "max": 1,
+          "required": true,
+          "description": "Dependent Demographic Information"
+        },
+        {
+          "loop": "L2100E",
+          "max": -1,
+          "required": false,
+          "description": "Dependent Name"
+        },
+        {
+          "loop": "L2200E",
+          "max": -1,
+          "required": false,
+          "description": "Claim Submitter Trace Number"
+        }
+      ]
+    },
+    "L277": {
+      "elements": [
+        {
+          "segment": "ST",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "BHT",
+          "max": 1,
+          "required": true,
+          "description": "Beginning Hierarchical Transaction"
+        },
+        {
+          "segment": "SE",
+          "required": true
+        },
+        {
+          "loop": "L2000A",
+          "max": -1,
+          "required": true,
+          "description": "Information Source Level"
+        },
+        {
+          "loop": "L2000B",
+          "max": -1,
+          "required": false,
+          "description": "Information Receiver Level"
+        },
+        {
+          "loop": "L2000C",
+          "max": -1,
+          "required": false,
+          "description": "Service Provider Level"
+        },
+        {
+          "loop": "L2000D",
+          "max": -1,
+          "required": false,
+          "description": "Subscriber Level"
+        },
+        {
+          "loop": "L2000E",
+          "max": -1,
+          "required": false,
+          "description": "Dependent Level"
+        }
+      ]
+    },
+    "root": {
+      "elements": [
+        {
+          "segment": "ISA",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "GS",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "GE",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "IEA",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "L277",
+          "max": -1,
+          "required": false,
+          "description": "This X12 Transaction Set contains the format and establishes the data contents of the Professional Healthcare Status Request and Response (277) for use within the context of an Electronic Data Interchange (EDI) environment."
+        }
+      ]
+    }
+  },
+  "832": {
+    "CTP": {
+      "elements": [
+        {
+          "segment": "CTP",
+          "max": 1,
+          "required": false,
+          "description": "Pricing Information"
+        },
+        {
+          "segment": "G40",
+          "max": 99,
+          "required": false,
+          "description": "Bracket Price"
+        },
+        {
+          "segment": "DTM",
+          "max": 10,
+          "required": false,
+          "description": "Date/Time Reference"
+        },
+        {
+          "segment": "CUR",
+          "max": 5,
+          "required": false,
+          "description": "Currency"
+        },
+        {
+          "segment": "REF",
+          "max": -1,
+          "required": false,
+          "description": "Reference Identification"
+        },
+        {
+          "segment": "G43",
+          "max": 9999,
+          "required": false,
+          "description": "Promotion/Price List Area"
+        }
+      ]
+    },
+    "LIN": {
+      "elements": [
+        {
+          "segment": "LIN",
+          "max": 1,
+          "required": false,
+          "description": "Item Identification"
+        },
+        {
+          "segment": "G53",
+          "max": 1,
+          "required": false,
+          "description": "Maintenance Type"
+        },
+        {
+          "segment": "SLN",
+          "max": 100,
+          "required": false,
+          "description": "Subline Item Detail"
+        },
+        {
+          "segment": "DTM",
+          "max": 10,
+          "required": false,
+          "description": "Date/Time Reference"
+        },
+        {
+          "segment": "CTB",
+          "max": 25,
+          "required": false,
+          "description": "Restrictions/ Conditions"
+        },
+        {
+          "segment": "PID",
+          "max": 200,
+          "required": false,
+          "description": "Product/Item Description"
+        },
+        {
+          "segment": "PO4",
+          "max": 1,
+          "required": false,
+          "description": "Item Physical Details"
+        },
+        {
+          "loop": "CTP",
+          "max": 100,
+          "required": false
+        }
+      ]
+    },
+    "N1": {
+      "elements": [
+        {
+          "segment": "N1",
+          "max": 1,
+          "required": false,
+          "description": "Name"
+        },
+        {
+          "segment": "N2",
+          "max": 2,
+          "required": false,
+          "description": "Additional Name Information"
+        },
+        {
+          "segment": "N3",
+          "max": 2,
+          "required": false,
+          "description": "Address Information"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": false,
+          "description": "Geographic location"
+        }
+      ]
+    },
+    "root": {
+      "elements": [
+        {
+          "segment": "ISA",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "GS",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "ST",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "BCT",
+          "max": 1,
+          "required": true,
+          "description": "Beginning segment for Price/Sales Catalog"
+        },
+        {
+          "segment": "PER",
+          "max": 3,
+          "required": false,
+          "description": "Administrative communication contact"
+        },
+        {
+          "segment": "CTT",
+          "max": 1,
+          "required": false,
+          "description": "Transaction totals"
+        },
+        {
+          "segment": "SE",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "GE",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "IEA",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "LIN",
+          "max": 700000,
+          "required": false,
+          "description": "To specify basic item identification data"
+        },
+        {
+          "loop": "N1",
+          "max": 200,
+          "required": false,
+          "description": "The 'N1' segment should be used to specify the name and SAN of the source (agent / distributor / wholesaler). If the SAN is not available then segments 'N2', 'N3', and 'N4' should be used to specify the source's address."
+        }
+      ]
+    }
+  },
+  "835": {
+    "L1000A": {
+      "elements": [
+        {
+          "segment": "N1",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "REF",
+          "max": 4,
+          "required": false
+        },
+        {
+          "segment": "PER",
+          "max": -1,
+          "required": false,
+          "description": "4010 allows for 1 segment, 5010 allows for more than 1 segment"
+        }
+      ]
+    },
+    "L1000B": {
+      "elements": [
+        {
+          "segment": "N1",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "REF",
+          "max": -1,
+          "required": false
+        }
+      ]
+    },
+    "L2110": {
+      "elements": [
+        {
+          "segment": "SVC",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "DTM",
+          "max": 3,
+          "required": false
+        },
+        {
+          "segment": "CAS",
+          "max": 99,
+          "required": false
+        },
+        {
+          "segment": "REF",
+          "max": 24,
+          "required": false
+        },
+        {
+          "segment": "AMT",
+          "max": 12,
+          "required": false
+        },
+        {
+          "segment": "QTY",
+          "max": 6,
+          "required": false
+        },
+        {
+          "segment": "LQ",
+          "max": 99,
+          "required": false
+        }
+      ]
+    },
+    "L2100": {
+      "elements": [
+        {
+          "segment": "CLP",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "CAS",
+          "max": 99,
+          "required": false
+        },
+        {
+          "segment": "NM1",
+          "max": 7,
+          "required": true
+        },
+        {
+          "segment": "MIA",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "MOA",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "REF",
+          "max": 15,
+          "required": false
+        },
+        {
+          "segment": "DTM",
+          "max": 4,
+          "required": false
+        },
+        {
+          "segment": "PER",
+          "max": 3,
+          "required": false
+        },
+        {
+          "segment": "AMT",
+          "max": 14,
+          "required": false
+        },
+        {
+          "segment": "QTY",
+          "max": 15,
+          "required": false
+        },
+        {
+          "loop": "L2110",
+          "max": 999,
+          "required": false,
+          "description": "Service Payment Information"
+        }
+      ]
+    },
+    "L2000": {
+      "elements": [
+        {
+          "segment": "LX",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "TS3",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "TS2",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2100",
+          "required": false,
+          "description": "The Loop 2100 CLP Claim Payment Information Segment begins data on each individual claim for a service provider within the 835 Transaction."
+        }
+      ]
+    },
+    "L835": {
+      "elements": [
+        {
+          "segment": "ST",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "BPR",
+          "max": 1,
+          "required": true,
+          "description": "Fianancial Information"
+        },
+        {
+          "segment": "NTE",
+          "max": -1,
+          "required": false,
+          "description": "Note / Special Instruction"
+        },
+        {
+          "segment": "TRN",
+          "max": 1,
+          "required": true,
+          "description": "Re-association Trace Number"
+        },
+        {
+          "segment": "CUR",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "REF",
+          "max": 2,
+          "required": false
+        },
+        {
+          "segment": "DTM",
+          "max": 1,
+          "required": false,
+          "description": "Production Date"
+        },
+        {
+          "loop": "L1000A",
+          "max": 1,
+          "required": true,
+          "description": "Payer Identification"
+        },
+        {
+          "loop": "L1000B",
+          "max": 1,
+          "required": true,
+          "description": "Payee Identification"
+        },
+        {
+          "loop": "L2000",
+          "required": false,
+          "description": "Claim Payment Information"
+        },
+        {
+          "segment": "PLB",
+          "max": -1,
+          "required": false,
+          "description": "Provider Level Adjustment"
+        },
+        {
+          "segment": "SE",
+          "required": true
+        }
+      ]
+    },
+    "root": {
+      "elements": [
+        {
+          "segment": "ISA",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "TA1",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "GS",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "L835",
+          "max": -1,
+          "required": false,
+          "description": "This X12 Transaction Set contains the format and establishes the data contents of the Professional Healthcare Claim Transaction Set (837p) for use within the context of an Electronic Data Interchange (EDI) environment."
+        },
+        {
+          "segment": "GE",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "IEA",
+          "max": 1,
+          "required": true
+        }
+      ]
+    }
+  },
+  "850": {
+    "N9": {
+      "elements": [
+        {
+          "segment": "N9",
+          "max": 1,
+          "required": false,
+          "description": "Extended reference information"
+        }
+      ]
+    },
+    "N1": {
+      "elements": [
+        {
+          "segment": "N1",
+          "max": 1,
+          "required": false,
+          "description": "Party identification"
+        },
+        {
+          "segment": "N3",
+          "max": 2,
+          "required": false,
+          "description": "Party location"
+        },
+        {
+          "segment": "N4",
+          "max": -1,
+          "required": false,
+          "description": "Geographic location"
+        }
+      ]
+    },
+    "PID": {
+      "elements": [
+        {
+          "segment": "PID",
+          "max": 1,
+          "required": false,
+          "description": "Product/item description"
+        }
+      ]
+    },
+    "undefined": {
+      "elements": [
+        {
+          "segment": "CTT",
+          "max": 1,
+          "required": false,
+          "description": "Transaction totals"
+        }
+      ]
+    },
+    "PO1": {
+      "elements": [
+        {
+          "segment": "PO1",
+          "max": 1,
+          "required": true,
+          "description": "Baseline item detail"
+        },
+        {
+          "segment": "PO4",
+          "max": -1,
+          "required": false,
+          "description": "Item physical details"
+        },
+        {
+          "loop": "PID",
+          "max": 1000,
+          "required": false
+        },
+        {
+          "max": 1000,
+          "required": false
+        }
+      ]
+    },
+    "root": {
+      "elements": [
+        {
+          "segment": "ISA",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "GS",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "ST",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "BEG",
+          "max": 1,
+          "required": true,
+          "description": "Beginning segment for purchase order"
+        },
+        {
+          "segment": "DTM",
+          "max": 10,
+          "required": false,
+          "description": "Date/Time Reference"
+        },
+        {
+          "segment": "SE",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "GE",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "IEA",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "N9",
+          "max": 1000,
+          "required": false
+        },
+        {
+          "loop": "N1",
+          "max": 200,
+          "required": false
+        },
+        {
+          "loop": "PO1",
+          "max": 100000,
+          "required": false
+        },
+        {
+          "required": false
+        }
+      ]
+    }
+  },
+  "997": {
+    "L1010": {
+      "elements": [
+        {
+          "segment": "AK3",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "AK4",
+          "max": 99,
+          "required": false
+        }
+      ]
+    },
+    "L1000": {
+      "elements": [
+        {
+          "segment": "AK2",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "AK5",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "L1010",
+          "max": 999999,
+          "required": false
+        }
+      ]
+    },
+    "root": {
+      "elements": [
+        {
+          "segment": "ST",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "AK1",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "AK9",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "SE",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "L1000",
+          "max": 999999,
+          "required": true
+        }
+      ]
+    }
+  },
+  "999": {
+    "L1020": {
+      "elements": [
+        {
+          "segment": "IK4",
+          "max": 1,
+          "required": false,
+          "description": "Implementation Data Element Note"
+        },
+        {
+          "segment": "CTX",
+          "max": 10,
+          "required": false,
+          "description": "Element Context"
+        }
+      ]
+    },
+    "L1010": {
+      "elements": [
+        {
+          "segment": "IK3",
+          "max": 1,
+          "required": false,
+          "description": "Error Identification"
+        },
+        {
+          "segment": "CTX",
+          "max": 10,
+          "required": false,
+          "description": "Segment Context"
+        },
+        {
+          "loop": "L1020",
+          "required": false
+        }
+      ]
+    },
+    "L1000": {
+      "elements": [
+        {
+          "segment": "AK2",
+          "max": 1,
+          "required": false,
+          "description": "Transaction Set Response Header"
+        },
+        {
+          "segment": "IK5",
+          "max": 1,
+          "required": true,
+          "description": "Transaction Set Response Trailer"
+        },
+        {
+          "loop": "L1010",
+          "max": 999999,
+          "required": false
+        }
+      ]
+    },
+    "root": {
+      "elements": [
+        {
+          "segment": "ISA",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "TA1",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "GS",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "ST",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "AK1",
+          "max": 1,
+          "required": true,
+          "description": "Functional Group Response"
+        },
+        {
+          "segment": "AK9",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "SE",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "GE",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "IEA",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "L1000",
+          "max": 999999,
+          "required": true
+        }
+      ]
+    }
+  },
+  "837i": {
+    "L1000A": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Submitter EDI name"
+        },
+        {
+          "segment": "PER",
+          "max": 2,
+          "required": true,
+          "description": "Submitter EDI contact information"
+        }
+      ]
+    },
+    "L1000B": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Receiver name"
+        }
+      ]
+    },
+    "L2000A": {
+      "elements": [
+        {
+          "segment": "HL",
+          "max": 1,
+          "level": "20",
+          "required": true,
+          "description": "Billing provider hierarchical level"
+        },
+        {
+          "segment": "PRV",
+          "max": 1,
+          "required": false,
+          "description": "Billing provider specialty information"
+        },
+        {
+          "segment": "CUR",
+          "max": 1,
+          "required": false,
+          "description": "Foreign currency information"
+        },
+        {
+          "loop": "L2010AA",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "L2010AB",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2010AC",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2010AD",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2000B",
+          "required": true
+        }
+      ]
+    },
+    "L2010AA": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Billing provider name"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": true,
+          "description": "Billing provider address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true,
+          "description": "Billing provider city/state/zip code"
+        },
+        {
+          "segment": "REF",
+          "max": 3,
+          "required": true,
+          "description": "Billing provider tax id"
+        },
+        {
+          "segment": "PER",
+          "max": 2,
+          "required": false,
+          "description": "Billing provider contact information"
+        }
+      ]
+    },
+    "L2010AB": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Pay-to address name"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": true,
+          "description": "Pay-to provider address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true,
+          "description": "Pay-to provider city/state/zip code"
+        }
+      ]
+    },
+    "L2010AC": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Pay-to plan name"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": true,
+          "description": "Pay-to plan address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true,
+          "description": "Pay-to plan city/state/zip code"
+        },
+        {
+          "segment": "REF",
+          "max": 1,
+          "required": false,
+          "description": "Pay-to plan secondary id"
+        },
+        {
+          "segment": "REF",
+          "max": 1,
+          "required": true,
+          "description": "Pay-to plan tax id"
+        }
+      ]
+    },
+    "L2010AD": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Pay-to Factoring Agent Name"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": true,
+          "description": "Pay-to Factoring Agent Address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true,
+          "description": "Pay-to Factoring Agent City, State, ZIP Code"
+        },
+        {
+          "segment": "REF",
+          "max": 1,
+          "required": false,
+          "description": "Pay-to Factoring Agent Secondary Identification"
+        },
+        {
+          "segment": "REF",
+          "max": 1,
+          "required": true,
+          "description": "Pay-to Factoring Agent Tax Identification Number"
+        },
+        {
+          "segment": "PER",
+          "max": 2,
+          "required": false,
+          "description": "Pay-to Factoring Agent Contact Information"
+        }
+      ]
+    },
+    "L2000B": {
+      "elements": [
+        {
+          "segment": "HL",
+          "max": 1,
+          "level": "22",
+          "required": true,
+          "description": "Subscriber hierarchical level"
+        },
+        {
+          "segment": "SBR",
+          "max": 1,
+          "required": true,
+          "description": "subscriber information"
+        },
+        {
+          "loop": "L2010BA",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2010BB",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2000C",
+          "required": false
+        }
+      ]
+    },
+    "L2010BA": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Subscriber name"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": false,
+          "description": "Subscriber address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": false,
+          "description": "Subscriber city/state/zip"
+        },
+        {
+          "segment": "DMG",
+          "max": 1,
+          "required": false,
+          "description": "Subscriber demographic information"
+        },
+        {
+          "segment": "REF",
+          "max": 2,
+          "required": false
+        },
+        {
+          "segment": "PER",
+          "max": 1,
+          "required": false,
+          "description": "Property and casualty subscriber contact information"
+        }
+      ]
+    },
+    "L2010BB": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Payer name"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": false,
+          "description": "Payer address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": false,
+          "description": "Payer city/state/zip code"
+        },
+        {
+          "segment": "REF",
+          "max": 5,
+          "required": false
+        }
+      ]
+    },
+    "L2000C": {
+      "elements": [
+        {
+          "segment": "HL",
+          "level": "23",
+          "description": "Patient heirarchical level"
+        },
+        {
+          "segment": "PAT",
+          "description": "Patient information"
+        },
+        {
+          "loop": "L2010CA",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2300",
+          "required": false
+        }
+      ]
+    },
+    "L2010CA": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Patient name"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": true,
+          "description": "Patient address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true,
+          "description": "Patient city/state/zip"
+        },
+        {
+          "segment": "DMG",
+          "max": 1,
+          "required": true,
+          "description": "Patient demographic information"
+        },
+        {
+          "segment": "REF",
+          "max": 2,
+          "required": false,
+          "description": "Property and casualty claim number"
+        },
+        {
+          "segment": "PER",
+          "max": 1,
+          "required": false,
+          "description": "Property and casualty subscriber contact information"
+        }
+      ]
+    },
+    "L2300": {
+      "elements": [
+        {
+          "segment": "CLM",
+          "max": 1,
+          "required": true,
+          "description": "Claim information"
+        },
+        {
+          "segment": "DTP",
+          "max": 16,
+          "required": false,
+          "description": "Original Claim Creation Date"
+        },
+        {
+          "segment": "CL1",
+          "max": 1,
+          "required": true,
+          "description": "Institutional Claim Code"
+        },
+        {
+          "segment": "PWK",
+          "max": 10,
+          "required": false,
+          "description": "Claim supplemental information"
+        },
+        {
+          "segment": "REF",
+          "max": 14,
+          "required": false,
+          "description": "Claim References.  Up to 14 different claim references can be set for a 837p"
+        },
+        {
+          "segment": "K3",
+          "max": 10,
+          "required": false,
+          "description": "File information"
+        },
+        {
+          "segment": "NTE",
+          "max": 11,
+          "required": false,
+          "description": "Claim note"
+        },
+        {
+          "segment": "CR8",
+          "max": 9,
+          "required": false,
+          "description": "High Risk Implanted or Explanted Device"
+        },
+        {
+          "segment": "CRC",
+          "max": 1,
+          "required": false,
+          "description": "EPSDT Screening Service and Referral Information"
+        },
+        {
+          "segment": "HI",
+          "max": 12,
+          "required": true,
+          "description": "Healthcare diagnostic code"
+        },
+        {
+          "segment": "HCP",
+          "max": 1,
+          "required": false,
+          "description": "Claim pricing / repricing information"
+        },
+        {
+          "loop": "L2310",
+          "max": 6,
+          "required": false
+        },
+        {
+          "loop": "L2320",
+          "max": 10,
+          "required": false
+        },
+        {
+          "loop": "L2400",
+          "max": 999,
+          "required": true
+        }
+      ]
+    },
+    "L2310": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Provider name"
+        },
+        {
+          "segment": "PRV",
+          "max": 1,
+          "required": false,
+          "description": "Provider speciality information"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": true,
+          "description": "Provider Address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true,
+          "description": "Provider City, State, ZIP Code"
+        },
+        {
+          "segment": "REF",
+          "max": 4,
+          "required": false,
+          "description": "Provider secondary id"
+        }
+      ]
+    },
+    "L2310A": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Attending provider name"
+        },
+        {
+          "segment": "PRV",
+          "max": 1,
+          "required": false,
+          "description": "Attending provider speciality information"
+        },
+        {
+          "segment": "REF",
+          "max": 2,
+          "required": false,
+          "description": "Attending provider secondary id"
+        }
+      ]
+    },
+    "L2310B": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Operating Physician name"
+        },
+        {
+          "segment": "REF",
+          "max": 2,
+          "required": false,
+          "description": "Operating Physician secondary id"
+        }
+      ]
+    },
+    "L2310C": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Other Operating Physician Name"
+        },
+        {
+          "segment": "REF",
+          "max": 2,
+          "required": false,
+          "description": "Other Operating Physician Secondary Identification"
+        }
+      ]
+    },
+    "L2310D": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Rendering provider name"
+        },
+        {
+          "segment": "REF",
+          "max": 2,
+          "required": false,
+          "description": "Rendering provider secondary id"
+        }
+      ]
+    },
+    "L2310E": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Service Location Name"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": true,
+          "description": "Service Location Address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true,
+          "description": "Service Location City, State, ZIP Code"
+        },
+        {
+          "segment": "REF",
+          "max": 1,
+          "required": false,
+          "description": "Service Location Secondary Identification"
+        }
+      ]
+    },
+    "L2310F": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Referring Provider Name"
+        },
+        {
+          "segment": "REF",
+          "max": 1,
+          "required": false,
+          "description": "Referring Provider Secondary Identification"
+        }
+      ]
+    },
+    "L2320": {
+      "elements": [
+        {
+          "segment": "SBR",
+          "max": 1,
+          "required": false,
+          "description": "Other subscriber information"
+        },
+        {
+          "segment": "CAS",
+          "max": 5,
+          "required": false,
+          "description": "Claim adjustment information"
+        },
+        {
+          "segment": "AMT",
+          "max": 3,
+          "required": false,
+          "description": "Claim level adjustment amounts"
+        },
+        {
+          "segment": "OI",
+          "max": 1,
+          "required": true,
+          "description": "Other insurance coverage information"
+        },
+        {
+          "segment": "MIA",
+          "max": 1,
+          "required": false,
+          "description": "Medicare outpatient adjudication information"
+        },
+        {
+          "segment": "MOA",
+          "max": 1,
+          "required": false,
+          "description": "Medicare outpatient adjudication information"
+        },
+        {
+          "loop": "L2330A",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2330B",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2330CDEFGHI",
+          "max": 6,
+          "required": false,
+          "description": "Loops 2330C through 2330I combined for inbound transactions, application needs to determine the correct loop being provided."
+        }
+      ]
+    },
+    "L2330A": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Other subscriber name"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": false,
+          "description": "Other subscriber address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true,
+          "description": "Other subscriber city/state/zip"
+        },
+        {
+          "segment": "REF",
+          "max": 1,
+          "required": false,
+          "description": "Other subscriber location secondary id"
+        }
+      ]
+    },
+    "L2330B": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Other payer name"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": false,
+          "description": "Other payer address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true,
+          "description": "Other payer city/state/zip"
+        },
+        {
+          "segment": "DTP",
+          "max": 1,
+          "required": false,
+          "description": "Date - claim check or remittance date"
+        },
+        {
+          "segment": "REF",
+          "max": 6,
+          "required": false,
+          "description": "Other reference information. Up to 6 different references can be associated to an 837p"
+        }
+      ]
+    },
+    "L2330CDEFGHI": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Name"
+        },
+        {
+          "segment": "REF",
+          "max": 3,
+          "required": true,
+          "description": "Secondary id"
+        }
+      ]
+    },
+    "L2400": {
+      "elements": [
+        {
+          "segment": "LX",
+          "max": 1,
+          "required": true,
+          "description": "Service line"
+        },
+        {
+          "segment": "SV2",
+          "max": 1,
+          "required": true,
+          "description": "Institutional Service Line"
+        },
+        {
+          "segment": "PWK",
+          "max": 10,
+          "required": false,
+          "description": "Line supplemental informtion"
+        },
+        {
+          "segment": "DTP",
+          "max": 1,
+          "required": false,
+          "description": "Service/Assessment Date"
+        },
+        {
+          "segment": "REF",
+          "max": 3,
+          "required": false
+        },
+        {
+          "segment": "AMT",
+          "max": 2,
+          "required": false
+        },
+        {
+          "segment": "NTE",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "HCP",
+          "max": 1,
+          "required": false,
+          "description": "Line pricing/repricing information"
+        },
+        {
+          "loop": "L2410",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2420ABCD",
+          "max": 4,
+          "required": false
+        },
+        {
+          "loop": "L2430",
+          "max": 15,
+          "required": false
+        }
+      ]
+    },
+    "L2410": {
+      "elements": [
+        {
+          "segment": "LIN",
+          "max": 1,
+          "required": false,
+          "description": "Drug identification"
+        },
+        {
+          "segment": "CTP",
+          "max": 1,
+          "required": true,
+          "description": "Drug pricing"
+        },
+        {
+          "segment": "REF",
+          "max": 1,
+          "required": false,
+          "description": "Prescription or compound drug association number"
+        }
+      ]
+    },
+    "L2420ABCD": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Operating Physician Name"
+        },
+        {
+          "segment": "REF",
+          "max": 20,
+          "required": false,
+          "description": "Operating Physician Secondary Identification"
+        }
+      ]
+    },
+    "L2420A": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Operating Physician Name"
+        },
+        {
+          "segment": "REF",
+          "max": 20,
+          "required": false,
+          "description": "Operating Physician Secondary Identification"
+        }
+      ]
+    },
+    "L2420B": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Other Operating Physician Name"
+        },
+        {
+          "segment": "REF",
+          "max": 20,
+          "required": false,
+          "description": "Other Operating Physician Secondary Identification"
+        }
+      ]
+    },
+    "L2420C": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Rendering Provider Name"
+        },
+        {
+          "segment": "REF",
+          "max": 20,
+          "required": false,
+          "description": "Rendering Provider Secondary Identification"
+        }
+      ]
+    },
+    "L2420D": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Referring Provider Name"
+        },
+        {
+          "segment": "REF",
+          "max": 11,
+          "required": false,
+          "description": "Referring Provider Secondary Identification"
+        }
+      ]
+    },
+    "L2430": {
+      "elements": [
+        {
+          "segment": "SVD",
+          "max": 1,
+          "required": false,
+          "description": "Line adjudication information"
+        },
+        {
+          "segment": "CAS",
+          "max": 5,
+          "required": false,
+          "description": "Service Adjustment Information"
+        },
+        {
+          "segment": "DTP",
+          "max": 1,
+          "required": true,
+          "description": "Payment Effective Date"
+        },
+        {
+          "segment": "AMT",
+          "max": 1,
+          "required": false,
+          "description": "Remaining patient liability"
+        }
+      ]
+    },
+    "L837": {
+      "elements": [
+        {
+          "segment": "ST",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "BHT",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "L1000A",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "L1000B",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "L2000A",
+          "required": true
+        },
+        {
+          "segment": "SE",
+          "max": 1,
+          "required": true
+        }
+      ]
+    },
+    "root": {
+      "elements": [
+        {
+          "segment": "ISA",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "GS",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "L837",
+          "max": 5000,
+          "required": false,
+          "description": "This X12 Transaction Set contains the format and establishes the data contents of the Professional Healthcare Claim Transaction Set (837p) for use within the context of an Electronic Data Interchange (EDI) environment."
+        },
+        {
+          "segment": "GE",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "IEA",
+          "max": 1,
+          "required": true
+        }
+      ]
+    }
+  },
+  "837p": {
+    "L1000A": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Submitter EDI name"
+        },
+        {
+          "segment": "PER",
+          "max": 2,
+          "required": true,
+          "description": "Submitter EDI contact information"
+        }
+      ]
+    },
+    "L1000B": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Receiver name"
+        }
+      ]
+    },
+    "L2010AA": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Billing provider name"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": true,
+          "description": "Billing provider address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true,
+          "description": "Billing provider city/state/zip code"
+        },
+        {
+          "segment": "REF",
+          "max": 3,
+          "required": true,
+          "description": "Billing provider tax id"
+        },
+        {
+          "segment": "PER",
+          "max": 2,
+          "required": false,
+          "description": "Billing provider contact information"
+        }
+      ]
+    },
+    "L2010AB": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Pay-to address name"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": true,
+          "description": "Pay-to provider address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true,
+          "description": "Pay-to provider city/state/zip code"
+        },
+        {
+          "segment": "REF",
+          "max": 5,
+          "required": false,
+          "description": "Pay-to provider contact information"
+        }
+      ]
+    },
+    "L2010AC": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Pay-to plan name"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": true,
+          "description": "Pay-to plan address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true,
+          "description": "Pay-to plan city/state/zip code"
+        },
+        {
+          "segment": "REF",
+          "max": 1,
+          "required": false,
+          "description": "Pay-to plan secondary id"
+        },
+        {
+          "segment": "REF",
+          "max": 1,
+          "required": true,
+          "description": "Pay-to plan tax id"
+        }
+      ]
+    },
+    "L2000A": {
+      "elements": [
+        {
+          "segment": "HL",
+          "max": 1,
+          "required": true,
+          "description": "Billing provider hierarchical level"
+        },
+        {
+          "segment": "PRV",
+          "max": 1,
+          "required": false,
+          "description": "Billing provider specialty information"
+        },
+        {
+          "segment": "CUR",
+          "max": 1,
+          "required": false,
+          "description": "Foreign currency information"
+        },
+        {
+          "loop": "L2010AA",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "L2010AB",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2010AC",
+          "max": 1,
+          "required": false
+        }
+      ]
+    },
+    "L2010BA": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Subscriber name"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": false,
+          "description": "Subscriber address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": false,
+          "description": "Subscriber city/state/zip"
+        },
+        {
+          "segment": "DMG",
+          "max": 1,
+          "required": false,
+          "description": "Subscriber demographic information"
+        },
+        {
+          "segment": "REF",
+          "max": 2,
+          "required": false
+        },
+        {
+          "segment": "PER",
+          "max": 1,
+          "required": false,
+          "description": "Property and casualty subscriber contact information"
+        }
+      ]
+    },
+    "L2010BB": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Payer name"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": false,
+          "description": "Payer address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": false,
+          "description": "Payer city/state/zip code"
+        },
+        {
+          "segment": "REF",
+          "max": 5,
+          "required": false
+        }
+      ]
+    },
+    "L2000B": {
+      "elements": [
+        {
+          "segment": "HL",
+          "max": 1,
+          "required": true,
+          "description": "Subscriber heiarchical level"
+        },
+        {
+          "segment": "SBR",
+          "max": 1,
+          "required": true,
+          "description": "subscriber information"
+        },
+        {
+          "segment": "PAT",
+          "max": 1,
+          "required": false,
+          "description": "Patient information"
+        },
+        {
+          "loop": "L2010BA",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "L2010BB",
+          "max": 1,
+          "required": true
+        }
+      ]
+    },
+    "L2010CA": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Patient name"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": true,
+          "description": "Patient address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true,
+          "description": "Patient city/state/zip"
+        },
+        {
+          "segment": "DMG",
+          "max": 1,
+          "required": true,
+          "description": "Patient demographic information"
+        },
+        {
+          "segment": "REF",
+          "max": 1,
+          "required": false,
+          "description": "Property and casualty claim number"
+        },
+        {
+          "segment": "PER",
+          "max": 1,
+          "required": false,
+          "description": "Property and casualty subscriber contact information"
+        }
+      ]
+    },
+    "L2000C": {
+      "elements": [
+        {
+          "segment": "HL",
+          "required": true,
+          "description": "Patient heirarchical level"
+        },
+        {
+          "segment": "PAT",
+          "required": true,
+          "description": "Patient information"
+        },
+        {
+          "loop": "L2010CA",
+          "max": 1,
+          "required": false
+        }
+      ]
+    },
+    "L2310A": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Referring provider name"
+        },
+        {
+          "segment": "REF",
+          "max": 3,
+          "required": false,
+          "description": "Referring provider secondary id"
+        }
+      ]
+    },
+    "L2310B": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Rendering provider name"
+        },
+        {
+          "segment": "PRV",
+          "max": 1,
+          "required": false,
+          "description": "Rendering provider specialty information"
+        },
+        {
+          "segment": "REF",
+          "max": 4,
+          "required": false,
+          "description": "Rendering provider secondary id"
+        }
+      ]
+    },
+    "L2310C": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Service facility location"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": true,
+          "description": "Service facility address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true,
+          "description": "Service facility city/state/zip"
+        },
+        {
+          "segment": "REF",
+          "max": 3,
+          "required": false,
+          "description": "Service facility location secondary id"
+        },
+        {
+          "segment": "PER",
+          "max": 1,
+          "required": false,
+          "description": "Service facility contact information"
+        }
+      ]
+    },
+    "L2310D": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Supervising provider name"
+        },
+        {
+          "segment": "REF",
+          "max": 4,
+          "required": false,
+          "description": "Supervising provider secondary id"
+        }
+      ]
+    },
+    "L2310E": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Ambulance pick up location"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": true,
+          "description": "Ambulance pick up address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true,
+          "description": "Ambulance pick up city/state/zip"
+        }
+      ]
+    },
+    "L2310F": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Ambulance dropoff location"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": true,
+          "description": "Ambulance dropoff address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true,
+          "description": "Ambulance dropoff city/state/zip"
+        }
+      ]
+    },
+    "L2320": {
+      "elements": [
+        {
+          "segment": "SBR",
+          "max": 1,
+          "required": false,
+          "description": "Other subscriber information"
+        },
+        {
+          "segment": "CAS",
+          "max": 5,
+          "required": false,
+          "description": "Claim level adjustment"
+        },
+        {
+          "segment": "AMT",
+          "max": 3,
+          "required": false,
+          "description": "Claim level adjustment amounts"
+        },
+        {
+          "segment": "OI",
+          "max": 1,
+          "required": true,
+          "description": "Other insurance coverage information"
+        },
+        {
+          "segment": "MOA",
+          "max": 1,
+          "required": false,
+          "description": "Medicare outpatient adjudication information"
+        }
+      ]
+    },
+    "L2330A": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Other subscriber name"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": false,
+          "description": "Other subscriber address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true,
+          "description": "Other subscriber city/state/zip"
+        },
+        {
+          "segment": "REF",
+          "max": 1,
+          "required": false,
+          "description": "Other subscriber location secondary id"
+        }
+      ]
+    },
+    "L2330B": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Other payer name"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": false,
+          "description": "Other payer address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true,
+          "description": "Other payer city/state/zip"
+        },
+        {
+          "segment": "DTP",
+          "max": 1,
+          "required": false,
+          "description": "Date - claim check or remittance date"
+        },
+        {
+          "segment": "REF",
+          "max": 6,
+          "required": false,
+          "description": "Other reference information. Up to 6 different references can be associated to an 837p"
+        }
+      ]
+    },
+    "L2330CDEFG": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true,
+          "description": "Name"
+        },
+        {
+          "segment": "REF",
+          "max": 3,
+          "required": true,
+          "description": "Secondary id"
+        }
+      ]
+    },
+    "L2400": {
+      "elements": [
+        {
+          "segment": "LX",
+          "max": 1,
+          "required": true,
+          "description": "Service line"
+        },
+        {
+          "segment": "SV1",
+          "max": 1,
+          "required": true,
+          "description": "Professional service"
+        },
+        {
+          "segment": "SV5",
+          "max": 1,
+          "required": false,
+          "description": "Durable medical equipment service"
+        },
+        {
+          "segment": "PWK",
+          "max": 10,
+          "required": false,
+          "description": "Line supplemental informtion"
+        },
+        {
+          "segment": "PWK",
+          "max": 1,
+          "required": false,
+          "description": "Durable medical equipment certificate of medical necessity indicator"
+        },
+        {
+          "segment": "CR1",
+          "max": 1,
+          "required": false,
+          "description": "Ambulance transport information"
+        },
+        {
+          "segment": "CR3",
+          "max": 1,
+          "required": false,
+          "description": "Durable medical equipment certification"
+        },
+        {
+          "segment": "CRC",
+          "max": 3,
+          "required": false,
+          "description": "Ambulance certification"
+        },
+        {
+          "segment": "CRC",
+          "max": 1,
+          "required": false,
+          "description": "Hospice employee indicator"
+        },
+        {
+          "segment": "CRC",
+          "max": 1,
+          "required": false,
+          "description": "Condition indicator durable medical equipment"
+        },
+        {
+          "segment": "DTP",
+          "max": 1,
+          "required": true,
+          "description": "Date - service date; qualifier=472"
+        },
+        {
+          "segment": "QTY",
+          "max": 1,
+          "required": false,
+          "description": "Ambulance patient count; qualifier=PT"
+        },
+        {
+          "segment": "QTY",
+          "max": 1,
+          "required": false,
+          "description": "Obstetric Anesthesia additional units; qualifier=FL"
+        },
+        {
+          "segment": "MEA",
+          "max": 5,
+          "required": false,
+          "description": "Test Results"
+        },
+        {
+          "segment": "CN1",
+          "max": 1,
+          "required": false,
+          "description": "Contract information"
+        },
+        {
+          "segment": "REF",
+          "max": 17,
+          "required": false
+        },
+        {
+          "segment": "AMT",
+          "max": 2,
+          "required": false
+        },
+        {
+          "segment": "K3",
+          "max": 10,
+          "required": false,
+          "description": "File information"
+        },
+        {
+          "segment": "NTE",
+          "max": 2,
+          "required": false
+        },
+        {
+          "segment": "PS1",
+          "max": 1,
+          "required": false,
+          "description": "Purchasd service information"
+        },
+        {
+          "segment": "HCP",
+          "max": 1,
+          "required": false,
+          "description": "Line pricing/repricing information"
+        }
+      ]
+    },
+    "L2410": {
+      "elements": [
+        {
+          "segment": "LIN",
+          "max": 1,
+          "required": false,
+          "description": "Drug identification"
+        },
+        {
+          "segment": "CTP",
+          "max": 1,
+          "required": true,
+          "description": "Drug pricing"
+        },
+        {
+          "segment": "REF",
+          "max": 1,
+          "required": false,
+          "description": "Prescription or compound drug association number"
+        }
+      ]
+    },
+    "L2420A": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Rendering provider name"
+        },
+        {
+          "segment": "PRV",
+          "max": 1,
+          "required": false,
+          "description": "Rendering provider specialty information"
+        },
+        {
+          "segment": "REF",
+          "max": 20,
+          "required": false,
+          "description": "Rendering provider secondary id"
+        }
+      ]
+    },
+    "L2420B": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Purchased service provider name"
+        },
+        {
+          "segment": "REF",
+          "max": 20,
+          "required": false,
+          "description": "Purchased service provider secondary id"
+        }
+      ]
+    },
+    "L2420C": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Service facility location name"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": true,
+          "description": "Service facility location address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true,
+          "description": "Service facility location city/state/zip"
+        },
+        {
+          "segment": "REF",
+          "max": 3,
+          "required": false,
+          "description": "Service facility location secondary id"
+        }
+      ]
+    },
+    "L2420D": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Supervising provider name"
+        },
+        {
+          "segment": "REF",
+          "max": 20,
+          "required": false,
+          "description": "Supervising provider secondary id"
+        }
+      ]
+    },
+    "L2420E": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Ordering provider name"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": false,
+          "description": "Ordering provider address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true,
+          "description": "Ordering provider city/state/zip"
+        },
+        {
+          "segment": "REF",
+          "max": 20,
+          "required": false,
+          "description": "Ordering provider secondary id"
+        },
+        {
+          "segment": "PER",
+          "max": 1,
+          "required": false,
+          "description": "Ordering provider contact information"
+        }
+      ]
+    },
+    "L2420F": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Refering provider name"
+        },
+        {
+          "segment": "REF",
+          "max": 20,
+          "required": false,
+          "description": "Refering provider secondary id"
+        }
+      ]
+    },
+    "L2420G": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Ambulance pickup information"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": true,
+          "description": "Ambulance pickup address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true,
+          "description": "Ambulance pickup city/state/zip"
+        }
+      ]
+    },
+    "L2420H": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false,
+          "description": "Ambulance dropoff information"
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": true,
+          "description": "Ambulance dropoff address"
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true,
+          "description": "Ambulance dropoff city/state/zip"
+        }
+      ]
+    },
+    "L2430": {
+      "elements": [
+        {
+          "segment": "SVD",
+          "max": 1,
+          "required": false,
+          "description": "Line adjudication information"
+        },
+        {
+          "segment": "CAS",
+          "max": 5,
+          "required": false,
+          "description": "Line adjustment"
+        },
+        {
+          "segment": "DTP",
+          "max": 1,
+          "required": true,
+          "description": "Line check or remittance date"
+        },
+        {
+          "segment": "AMT",
+          "max": 1,
+          "required": false,
+          "description": "Remaining patient liability"
+        },
+        {
+          "segment": "LQ",
+          "max": 1,
+          "required": false,
+          "description": "Form identification code"
+        },
+        {
+          "segment": "FRM",
+          "max": 99,
+          "required": false,
+          "description": "Supporting documentation"
+        }
+      ]
+    },
+    "L2300": {
+      "elements": [
+        {
+          "segment": "CLM",
+          "max": 1,
+          "required": true,
+          "description": "Claim information"
+        },
+        {
+          "segment": "DTP",
+          "max": 16,
+          "required": false,
+          "description": "Claim Dates. Up to 16 different dates can be set for a 837p"
+        },
+        {
+          "segment": "PWK",
+          "max": 10,
+          "required": false,
+          "description": "Claim supplemental information"
+        },
+        {
+          "segment": "CN1",
+          "max": 1,
+          "required": false,
+          "description": "Contract information"
+        },
+        {
+          "segment": "AMT",
+          "max": 1,
+          "required": false,
+          "description": "Patient amount paid"
+        },
+        {
+          "segment": "REF",
+          "max": 14,
+          "required": false,
+          "description": "Claim References.  Up to 14 different claim references can be set for a 837p"
+        },
+        {
+          "segment": "K3",
+          "max": 10,
+          "required": false,
+          "description": "File information"
+        },
+        {
+          "segment": "NTE",
+          "max": 1,
+          "required": false,
+          "description": "Claim note"
+        },
+        {
+          "segment": "CR1",
+          "max": 1,
+          "required": false,
+          "description": "Ambulance transport information"
+        },
+        {
+          "segment": "CR2",
+          "max": 1,
+          "required": false,
+          "description": "Spinal manipulation service information"
+        },
+        {
+          "segment": "CRC",
+          "max": 8,
+          "required": false,
+          "description": "Code Category. Up to 8 different CRC categories can be set for an 837p"
+        },
+        {
+          "segment": "HI",
+          "max": 6,
+          "required": true,
+          "description": "Healthcare diagnostic code"
+        },
+        {
+          "segment": "HCP",
+          "max": 1,
+          "required": false,
+          "description": "Claim pricing / repricing information"
+        },
+        {
+          "loop": "L2310A",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2310B",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2310C",
+          "required": false
+        },
+        {
+          "loop": "L2310D",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2310E",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2310F",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2320",
+          "max": 10,
+          "required": false
+        },
+        {
+          "loop": "L2330A",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2330B",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2330CDEFG",
+          "max": 6,
+          "required": false,
+          "description": "Loops 2330C through 2330G combined for inbound transactions, application needs to determine the correct loop being provided."
+        },
+        {
+          "loop": "L2400",
+          "max": 50,
+          "required": true
+        },
+        {
+          "loop": "L2410",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2420A",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2420B",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2420C",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2420D",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2420E",
+          "required": false
+        },
+        {
+          "loop": "L2420F",
+          "max": 2,
+          "required": false
+        },
+        {
+          "loop": "L2420G",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2420H",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2430",
+          "max": 15,
+          "required": false
+        }
+      ]
+    },
+    "L837": {
+      "elements": [
+        {
+          "segment": "ST",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "BHT",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "L1000A",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "L1000B",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "L2000A",
+          "required": true
+        },
+        {
+          "loop": "L2000B",
+          "required": true
+        },
+        {
+          "loop": "L2000C",
+          "required": false
+        },
+        {
+          "loop": "L2300",
+          "max": 100,
+          "required": true
+        },
+        {
+          "segment": "SE",
+          "required": true
+        }
+      ]
+    },
+    "root": {
+      "elements": [
+        {
+          "segment": "ISA",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "GS",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "L837",
+          "max": 5000,
+          "required": false,
+          "description": "This X12 Transaction Set contains the format and establishes the data contents of the Professional Healthcare Claim Transaction Set (837p) for use within the context of an Electronic Data Interchange (EDI) environment."
+        },
+        {
+          "segment": "GE",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "IEA",
+          "max": 1,
+          "required": true
+        }
+      ]
+    }
+  },
+  "278": {
+    "L2000A": {
+      "elements": [
+        {
+          "segment": "HL",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "L2010A",
+          "max": 1,
+          "required": false,
+          "description": ""
+        }
+      ]
+    },
+    "L2010A": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true
+        }
+      ]
+    },
+    "L2000B": {
+      "elements": [
+        {
+          "segment": "HL",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "L2010B",
+          "max": 1,
+          "required": false,
+          "description": ""
+        }
+      ]
+    },
+    "L2010B": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "REF",
+          "max": 8,
+          "required": false
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "PER",
+          "max": 2,
+          "required": false
+        },
+        {
+          "segment": "PRV",
+          "max": 1,
+          "required": false
+        }
+      ]
+    },
+    "L2000C": {
+      "elements": [
+        {
+          "segment": "HL",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "L2010C",
+          "max": 1,
+          "required": false,
+          "description": ""
+        }
+      ]
+    },
+    "L2010C": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "REF",
+          "max": 9,
+          "required": false
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "DMG",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "INS",
+          "max": 1,
+          "required": false
+        }
+      ]
+    },
+    "L2000D": {
+      "elements": [
+        {
+          "segment": "HL",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2010D",
+          "max": 1,
+          "required": false,
+          "description": ""
+        }
+      ]
+    },
+    "L2010D": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "REF",
+          "max": 2,
+          "required": false
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "DMG",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "INS",
+          "max": 1,
+          "required": false
+        }
+      ]
+    },
+    "L2000E": {
+      "elements": [
+        {
+          "segment": "HL",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "TRN",
+          "max": 2,
+          "required": false
+        },
+        {
+          "segment": "UM",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "HCR",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "REF",
+          "max": 3,
+          "required": false
+        },
+        {
+          "segment": "DTP",
+          "max": 7,
+          "required": false
+        },
+        {
+          "segment": "HI",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "HSD",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "CRC",
+          "max": 7,
+          "required": false
+        },
+        {
+          "segment": "CL1",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "CR1",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "CR2",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "CR5",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "CR6",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "PWK",
+          "max": 10,
+          "required": false
+        },
+        {
+          "segment": "MSG",
+          "max": 1,
+          "required": false
+        },
+        {
+          "loop": "L2010EA",
+          "max": 14,
+          "required": false,
+          "description": ""
+        },
+        {
+          "loop": "L2010EB",
+          "max": 5,
+          "required": false,
+          "description": ""
+        },
+        {
+          "loop": "L2010EC",
+          "max": 3,
+          "required": false,
+          "description": ""
+        }
+      ]
+    },
+    "L2010EA": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "REF",
+          "max": 8,
+          "required": false
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "PER",
+          "max": 2,
+          "required": false
+        },
+        {
+          "segment": "PRV",
+          "max": 1,
+          "required": false
+        }
+      ]
+    },
+    "L2010EB": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": true
+        }
+      ]
+    },
+    "L2010EC": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "REF",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "DTP",
+          "max": 1,
+          "required": true
+        }
+      ]
+    },
+    "L2000F": {
+      "elements": [
+        {
+          "loop": "L2010F",
+          "max": 10,
+          "required": false,
+          "description": ""
+        },
+        {
+          "segment": "HL",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "TRN",
+          "max": 2,
+          "required": false
+        },
+        {
+          "segment": "UM",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "HCR",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "REF",
+          "max": 2,
+          "required": false
+        },
+        {
+          "segment": "DTP",
+          "max": -1,
+          "required": false
+        },
+        {
+          "segment": "HI",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "SV1",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "SV2",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "SV3",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "TOO",
+          "max": 32,
+          "required": false
+        },
+        {
+          "segment": "DN2",
+          "max": 35,
+          "required": false
+        },
+        {
+          "segment": "DRA",
+          "max": -1,
+          "required": false
+        },
+        {
+          "segment": "HSD",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "CR8",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "PWK",
+          "max": 10,
+          "required": false
+        },
+        {
+          "segment": "MSG",
+          "max": 1,
+          "required": false
+        }
+      ]
+    },
+    "L2010F": {
+      "elements": [
+        {
+          "segment": "NM1",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "REF",
+          "max": 8,
+          "required": false
+        },
+        {
+          "segment": "N3",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "N4",
+          "max": 1,
+          "required": false
+        },
+        {
+          "segment": "PER",
+          "max": 2,
+          "required": false
+        },
+        {
+          "segment": "PRV",
+          "max": 1,
+          "required": false
+        }
+      ]
+    },
+    "L278": {
+      "elements": [
+        {
+          "segment": "ST",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "BHT",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "L2000A",
+          "max": 1,
+          "required": false,
+          "description": "Information Source Level"
+        },
+        {
+          "loop": "L2000B",
+          "max": 1,
+          "required": false,
+          "description": "Information Receiver Level"
+        },
+        {
+          "loop": "L2000C",
+          "max": 1,
+          "required": false,
+          "description": "Subscriber Level"
+        },
+        {
+          "loop": "L2000D",
+          "max": 1,
+          "required": false,
+          "description": "Dependent Level"
+        },
+        {
+          "loop": "L2000E",
+          "max": 1,
+          "required": false,
+          "description": "Patient Level"
+        },
+        {
+          "loop": "L2000F",
+          "max": -1,
+          "required": false,
+          "description": "Service Level"
+        },
+        {
+          "segment": "SE",
+          "required": true
+        }
+      ]
+    },
+    "root": {
+      "elements": [
+        {
+          "segment": "ISA",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "GS",
+          "max": 1,
+          "required": true
+        },
+        {
+          "loop": "L278",
+          "max": 1,
+          "required": false,
+          "description": "This X12 Transaction Set contains the format and establishes the data contents of the Health Care Services Transaction Set (278) for use within the context of an Electronic Data Interchange (EDI) environment."
+        },
+        {
+          "segment": "GE",
+          "max": 1,
+          "required": true
+        },
+        {
+          "segment": "IEA",
+          "max": 1,
+          "required": true
+        }
+      ]
+    }
+  }
+}
